@@ -103,7 +103,7 @@ def get_birthday(birthday, year, today):
  
  
 def get_ciba():
-    url = "https://api.1314.cool/words/api.php?return=json"
+    url = "http://api.tianapi.com/saylove/index?key=bf843f0700753f423dfeae67503923c4"
     headers = {
         'Content-Type': 'application/json',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
@@ -111,7 +111,7 @@ def get_ciba():
     }
     r = get(url, headers=headers)
     note_en = "新的一天，早安！"
-    note_ch = r.json()["word"]
+    note_ch = r.newslist.content
     return note_ch, note_en 
  
  
