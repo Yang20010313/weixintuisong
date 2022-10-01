@@ -111,7 +111,7 @@ def get_ciba():
     }
     r = get(url, headers=headers)
     note_en = "新的一天，早安！"
-    note_ch = r['newlist'['content']]
+    note_ch = r['newlist']['content']
     return note_ch, note_en 
  
  
